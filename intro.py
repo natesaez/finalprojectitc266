@@ -29,7 +29,7 @@ if 'NO' in start:
     if 'YES' in start2 or 'YEAH' in start2 or 'Y' in start2:
         sys.exit()
     else:
-        print("I'm glad you're staying!")
+        fast_print("I'm glad you're staying!")
 else:
     fast_print(f"\nNow its time to start your adventure!\n")
 
