@@ -126,6 +126,6 @@ for line in choices:
 if option == '1':
     phishing.main()
 elif option == '2':
-    webexploit.start()
+    webexploit.main()
 elif option == '3':
     socialEngineering.main()
