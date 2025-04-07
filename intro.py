@@ -9,7 +9,7 @@ import bruteforce
 import phishing
 import webexploit
 
-def fast_print(text, delay=0.03):
+def fast_print(text= '', delay=0.03):
     """fast_Prints text one character at a time very fast."""
     for char in text:
         sys.stdout.write(char)
