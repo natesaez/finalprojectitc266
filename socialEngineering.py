@@ -3,6 +3,7 @@ import time
 import sys
 from character import Character
 import random
+import intro
 
 # Lists and dictionaries initialized here
 definitions = {
@@ -589,6 +590,7 @@ def main():
     fast_print('H.A.C.K. is taken down and justice is served!')
     fast_print(f'Good work {user.name}! You have helped stop an evil organization from doing even more damage.')
     fast_print("I hope that you've learned a thing or two about how cybersecurity works!\n")
+    intro.victory()
 
 if __name__ == '__main__':
     main()

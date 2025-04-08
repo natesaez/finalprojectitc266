@@ -17,6 +17,7 @@ def fast_print(text= '', delay=0.03):
         time.sleep(delay)
     print()
 
+
 # Initial welcoming to the game. Here the game will be explained and they will create their character
 fast_print(f'\nWelcome to the Hack Your Own Adventure Game! My name is hackerAI and I will assist you on your journey.')
 fast_print(f'\nIn this game you will be faced with many decisions.')
@@ -99,33 +100,48 @@ texts = [
 ]
 
 # Loop through each text and print it letter by letter
-for text in texts:
-    slow_print(text)
-    time.sleep(0.7)  # Pause between lines for pacing
+def you_must_choose():
+    for text in texts:
+        slow_print(text)
+        time.sleep(0.7)  # Pause between lines for pacing
 
-choice = True
-while choice == True:
-    option = input(f"Please enter a 1, 2, or a 3: ")
-    if option == 1 or option != 2 or option != 3:
-        choice = False
-    else:
-        print('Please enter a valid option.')
-        choice = True
+    choice = True
+    while choice == True:
+        option = input(f"Please enter a 1, 2, or a 3: ")
+        if option == 1 or option != 2 or option != 3:
+            choice = False
+        else:
+            print('Please enter a valid option.')
+            choice = True
 
-choices = [
-    f"You have chosen option {option}.",
-    "Let's proceed.",
-    ".......",
-    "......."
+    choices = [
+        f"You have chosen option {option}.",
+        "Let's proceed.",
+        ".......",
+        "......."
 ]
 
-for line in choices:
-    slow_print(line)
-    time.sleep(0.5)
+    for line in choices:
+        slow_print(line)
+        time.sleep(0.5)
 
-if option == '1':
-    phishing.main()
-elif option == '2':
-    webexploit.main()
-elif option == '3':
-    socialEngineering.main()
+    if option == '1':
+        phishing.main()
+    elif option == '2':
+        webexploit.main()
+    elif option == '3':
+        socialEngineering.main()
+
+you_must_choose()
+
+def victory():
+    fast_print("Victory is ours. Thank you for your help.")
+    fast_print("H.A.C.K has been exposed for what they truely are.")
+    fast_print("However I don't think they will stop unless we hack them again.")
+    fast_print("Would you like to try another way?")
+    go_again = input("(y/n): ")
+    if go_again == "y":
+        you_must_choose()
+    else:
+        fast_print("Goodbye")
+        sys.exit()

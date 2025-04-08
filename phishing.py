@@ -1,6 +1,7 @@
 import csv
 import sys
 import time
+import intro
 
 
 def fast_print(text= '', delay=0.03):
@@ -54,7 +55,7 @@ def phishing_attack():
             break
         else:
             input("Try again! (Press enter to proceed) ")
-
+    intro.victory()
 
 def phishing_email():
     email = ''
