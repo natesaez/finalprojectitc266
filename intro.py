@@ -145,3 +145,6 @@ def victory():
     else:
         fast_print("Goodbye")
         sys.exit()
+
+if __name__ == "__main__":
+    victory()

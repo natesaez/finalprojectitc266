@@ -113,7 +113,7 @@ def log_out():
 
 def game_over(ending):
     fast_print(f"\n🔚 GAME OVER: {ending}")
-    intro.victory()
+    intro.main()
 
 if __name__ == "__main__":
     start()

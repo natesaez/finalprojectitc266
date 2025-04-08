@@ -55,7 +55,7 @@ def phishing_attack():
             break
         else:
             input("Try again! (Press enter to proceed) ")
-    intro.victory()
+    intro.main()
 
 def phishing_email():
     email = ''
