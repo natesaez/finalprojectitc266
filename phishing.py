@@ -1,8 +1,12 @@
 import csv
 import sys
 import time
-import intro
 
+def  finish():
+    fast_print("Victory is ours. Thank you for your help.")
+    fast_print("H.A.C.K has been exposed for what they truely are.")
+    fast_print("Goodbye")
+    sys.exit()
 
 def fast_print(text= '', delay=0.03):
     """Prints text one character at a time very fast."""
@@ -52,10 +56,10 @@ def phishing_attack():
         employees = read_csv('employees_extended.csv')
         email, subject, content = phishing_email()
         if pass_test(email, subject, content, employees, link):
-            break
+            finish()
         else:
             input("Try again! (Press enter to proceed) ")
-    intro.main()
+    
 
 def phishing_email():
     email = ''

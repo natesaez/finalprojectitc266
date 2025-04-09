@@ -127,14 +127,20 @@ def you_must_choose():
 
     if option == '1':
         phishing.main()
+        finish()
     elif option == '2':
         webexploit.main()
+        finish()
     elif option == '3':
         socialEngineering.main()
+        finish()
 
 you_must_choose()
 
-def main():
+    
+        
+
+def  finish():
     fast_print("Victory is ours. Thank you for your help.")
     fast_print("H.A.C.K has been exposed for what they truely are.")
     fast_print("However I don't think they will stop unless we hack them again.")
@@ -145,6 +151,3 @@ def main():
     else:
         fast_print("Goodbye")
         sys.exit()
-
-if __name__ == "__main__":
-    main()

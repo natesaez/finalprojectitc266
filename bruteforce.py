@@ -1,7 +1,11 @@
 import sys
 import time
-import intro
 
+def  finish():
+    fast_print("Victory is ours. Thank you for your help.")
+    fast_print("H.A.C.K has been exposed for what they truely are.")
+    fast_print("Goodbye")
+    sys.exit()
 
 def fast_print(text= '', delay=0.03):
     """Prints text one character at a time very fast."""
@@ -113,7 +117,7 @@ def log_out():
 
 def game_over(ending):
     fast_print(f"\n🔚 GAME OVER: {ending}")
-    intro.main()
+    finish()
 
 if __name__ == "__main__":
     start()
