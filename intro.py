@@ -134,7 +134,7 @@ def you_must_choose():
 
 you_must_choose()
 
-def victory():
+def main():
     fast_print("Victory is ours. Thank you for your help.")
     fast_print("H.A.C.K has been exposed for what they truely are.")
     fast_print("However I don't think they will stop unless we hack them again.")
@@ -147,4 +147,4 @@ def victory():
         sys.exit()
 
 if __name__ == "__main__":
-    victory()
+    main()
