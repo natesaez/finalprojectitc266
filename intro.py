@@ -127,27 +127,11 @@ def you_must_choose():
 
     if option == '1':
         phishing.main()
-        finish()
     elif option == '2':
         webexploit.main()
-        finish()
     elif option == '3':
         socialEngineering.main()
-        finish()
+        
 
 you_must_choose()
 
-    
-        
-
-def  finish():
-    fast_print("Victory is ours. Thank you for your help.")
-    fast_print("H.A.C.K has been exposed for what they truely are.")
-    fast_print("However I don't think they will stop unless we hack them again.")
-    fast_print("Would you like to try another way?")
-    go_again = input("(y/n): ")
-    if go_again == "y":
-        you_must_choose()
-    else:
-        fast_print("Goodbye")
-        sys.exit()
