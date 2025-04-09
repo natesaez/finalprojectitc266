@@ -8,6 +8,7 @@ import socialEngineering
 import bruteforce
 import phishing
 import webexploit
+from ascii import *
 
 def fast_print(text= '', delay=0.03):
     """fast_Prints text one character at a time very fast."""
@@ -17,7 +18,7 @@ def fast_print(text= '', delay=0.03):
         time.sleep(delay)
     print()
 
-
+title()
 # Initial welcoming to the game. Here the game will be explained and they will create their character
 fast_print(f'\nWelcome to the Hack Your Own Adventure Game! My name is hackerAI and I will assist you on your journey.')
 fast_print(f'\nIn this game you will be faced with many decisions.')
@@ -56,6 +57,7 @@ def slow_print(text, delay=0.02):
         time.sleep(delay)
     print()  # Move to next line
 
+computer()
 story = [
     "I am HackerAI.",
     "A creation of Horizon Advanced Computing & Knowledge, or H.A.C.K. for short.",
@@ -126,10 +128,13 @@ def you_must_choose():
         time.sleep(0.5)
 
     if option == '1':
+        phishing_text()
         phishing.main()
     elif option == '2':
+        web_attack()
         webexploit.main()
     elif option == '3':
+        social_engineering()
         socialEngineering.main()
         
 
