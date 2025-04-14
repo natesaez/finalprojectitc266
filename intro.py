@@ -121,21 +121,28 @@ def you_must_choose():
         "Let's proceed.",
         ".......",
         "......."
-]
+]   
+    tf = True
+    while tf:
+        for line in choices:
+            slow_print(line)
+            time.sleep(0.5)
 
-    for line in choices:
-        slow_print(line)
-        time.sleep(0.5)
-
-    if option == '1':
-        phishing_text()
-        phishing.main()
-    elif option == '2':
-        web_attack()
-        webexploit.main()
-    elif option == '3':
-        social_engineering()
-        socialEngineering.main()
+        if option == '1':
+            phishing_text()
+            phishing.main()
+            tf = False
+        elif option == '2':
+            web_attack()
+            webexploit.main()
+            tf = False
+        elif option == '3':
+            social_engineering()
+            socialEngineering.main()
+            tf = False
+        else:
+            slow_print('Please enter a valid option.')
+            tf = True
         
 
 you_must_choose()

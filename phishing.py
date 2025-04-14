@@ -19,6 +19,9 @@ def beginning():
         phishing_attack()
     elif a == "n":
         explain_phishing()
+    else:
+        print("Input Invalid.")
+        beginning()
 
 def explain_phishing():
     fast_print()
@@ -34,6 +37,9 @@ def explain_phishing():
     elif a == "n":
         fast_print("\nYou'll figure it out... probably\n")
         phishing_attack()
+    else:
+        print("Input Invalid.")
+        explain_phishing()   
 
 def phishing_attack():
     link = "www.thisisasafelink.com"
