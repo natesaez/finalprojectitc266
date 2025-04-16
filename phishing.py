@@ -77,7 +77,15 @@ def phishing_email():
     fast_print("By my predictions, there are only two who will actually click on the link. Try to figure out which two employees they would be.")
     fast_print("In order for your email to work, you'll also need to make it urgent, using words like 'Now', 'Quick' or 'Urgent'\n")
     fast_print(f"Here is the link again: {link}")
-    fast_print("You'll also need to choose the right person and include the link in the email. Make sure it looks professional too. Press the enter key three times to send it.")
+
+    fast_print("First, you'll enter the FULL email address of the person you want to target, and click enter.")
+    fast_print("Second, you'll put the subject and click enter.")
+    fast_print("Third, write the actual email.")
+    
+    fast_print("You'll also need to choose the right person and include the link in the email. Make sure it looks professional too.")
+    fast_print("One you finish a line, you can't go back. So make sure each line is correct!")
+    fast_print("Press the enter key three times to send it.\n")
+    
     print("""--------------------------------------------""")
     email = input("To: ")
     subject = input("Subject: ")
